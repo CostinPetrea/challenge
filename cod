@@ -119,8 +119,7 @@ int main()
                 for (unsigned i = 0; i < list.size(); ++i) {
                     sum += list[i];
                 }
-                average = sum / list.size();
-                cout << "The mean of  numbers is: " << average << endl;
+                cout << "The mean of  numbers is: " << static_cast<double> (sum) / list.size() << endl;
                 
            } else {
                cout << "Unable to calculate the mean - no data." << endl;
